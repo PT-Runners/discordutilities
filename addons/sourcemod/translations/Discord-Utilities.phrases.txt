@@ -120,7 +120,7 @@
 	
 	"CopyPasteFromConsole"
 	{
-		"en"		"Também podes {lime}copiar e colar{default} da {orange}consola{default}"
+		"en"		"Também podes {lime}copiar e colar{default} na {orange}consola{default}"
 	}
 
 	"CallAdminReportHandledTitle"
@@ -191,7 +191,7 @@
 	
 	"SourceBansTitle"
 	{
-		"en"		"Novo jogador banido do servidor!"
+		"en"		"Jogador banido do servidor!"
 	}
 	"AdminField"
 	{
@@ -235,22 +235,22 @@
 	
 	"SourceCommsTitle"
 	{
-		"en"		"Novo jogador Mutado!"
+		"en"		"Jogador Mutado!"
 	}
 	
 	"MUTE"
 	{
-		"en"		"MUTE(VOZ)"
+		"en"		"MUTE"
 	}
 	
 	"GAG"
 	{
-		"en"		"MUTE(CHAT)"
+		"en"		"GAG"
 	}
 	
 	"SILENCE"
 	{
-		"en"		"MUTE(VOZ/CHAT)"
+		"en"		"SILENCE"
 	}
 	
 	"TypeField"
