@@ -1,0 +1,266 @@
+"Phrases"
+{
+	"CurrentMapField"
+	{
+		"en"		"Current Map:"
+	}
+
+	"PlayersOnlineField"
+	{
+		"en"		"Players Online:"
+	}
+
+	"DirectConnectField"
+	{
+		"en"		"Direct Connect:"
+	}
+	
+	"ChatRelayFormat"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"		//1 = Username | 2 = Discriminator | 3 = Message
+		"en"		"{orange}{1}#{2}{default}: {3}"
+	}
+	
+	"AdminChatRelayFormat"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"		//1 = Username | 2 = Discriminator | 3 = Message
+		"en"		"Admin: {orange}{1}#{2}{default}: {3}"
+	}
+	
+	"TryAgainLater"
+	{
+		"en"		"Please wait. Your member status hasn't been fetched yet."
+	}
+	
+	"DiscordRevoked"
+	{
+		"en"		"You are no longer in our discord server therefore your discord member status has been revoked!"
+	}
+	
+	"DiscordMissingParameters"
+	{
+		"#format"	"{1:s}"
+		"en"		"<@{1}> You need to provide an ID for this command!"
+	}
+
+	"DiscordInvalidID"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"<@{1}> This ID is not valid, please type {2} in-game and try again!"
+	}
+
+	"DiscordInvalid"
+	{
+		"#format"	"{1:s}"
+		"en"		"<@{1}> There is no client with this ID, ensure you are connected to the game server and check your ID again!"
+	}
+	
+	"DiscordInfo"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"<@{1}> This channel is being used for account linking!\nUsage: {2} <verification code>"
+	}
+	
+	"DiscordVerified"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"You have verified your account. ({green}{1}#{2}{default})"
+	}
+	
+	"DiscordLinked"
+	{
+		"#format"	"{1:s}"
+		"en"		"<@{1}> You've linked your account! ✅"
+	}
+	
+	"DiscordAlreadyLinked"
+	{
+		"#format"	"{1:s}"
+		"en"		"<@{1}> This discord account is already linked! ❌"
+	}
+	
+	"ChatRelayPrivateToAdmins"
+	{
+		"en"		"Private To Admins: "
+	}
+	
+	"ChatRelayAllChat"
+	{
+		"en"		"All Chat: "
+	}
+	
+	"AdminLogFormat"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"		//1 = TimeStamp | 2 = ServerName | 3 = MapName | 4 = Message
+		"en"		"{1}`{2}|{3}` => {4}"
+	}
+	
+	"AdminChatFormat"
+	{
+		"#format"	"{1:s},{2:s},{3:s},{4:s}"		//1 = TimeStamp | 2 = ServerName | 3 = PrivateToAdmins/Blank | 4 = Message
+		"en"		"{1}`{2}` => {3}{4}"
+	}
+	
+	"LinkYourID"
+	{
+		"#format"	"{1:s}"
+		"en" 		"Your ID: {grey}{1}"
+	}
+	
+	"LinkConnect"
+	{
+		"en"		"Join our discord server:"
+	}
+
+	"LinkUsage"
+	{
+		"#format"	"{1:s},{2:s},{3:s}"
+		"en"		"Type {lime}{1} {2} {default}in {orange}#{3}"
+	}
+	
+	"CopyPasteFromConsole"
+	{
+		"en"		"You can also {lime}copy-paste{default} from {orange}console{default} :)"
+	}
+
+	"CallAdminReportHandledTitle"
+	{
+		"en"		"CallAdmin Report is being handled!"
+	}
+	
+	"CallAdminReportHandlerName"
+	{
+		"en"		"Handler Name:"
+	}
+	
+	"CallAdminReportIDField"
+	{
+		"en"		"Report ID:"
+	}
+	
+	"ServerField"
+	{
+		"#format"	"{1:s}"
+		"en"		"Server: {1}"
+	}
+	
+	"CallAdminReportTitle"
+	{
+		"en"		"New CallAdmin Report!"
+	}
+	
+	"CONSOLE"
+	{
+		"en"		"CONSOLE"
+	}
+	
+	"SERVER"
+	{
+		"en"		"SERVER"
+	}
+	
+	"ReporterField"
+	{
+		"en"		"Reporter:"
+	}
+	
+	"TargetField"
+	{
+		"en"		"Target:"
+	}
+	
+	"ReasonField"
+	{
+		"en"		"Reason:"
+	}
+	
+	"BugReportTitle"
+	{
+		"en"		"New Bug Report!"
+	}
+	
+	"MapField"
+	{
+		"en"		"Map:"
+	}
+	
+	"NoReasonSpecified"
+	{
+		"en"		"No reason specified."
+	}
+	
+	"SourceBansTitle"
+	{
+		"en"		"New Player Server Banned!"
+	}
+	"AdminField"
+	{
+		"en"		"ADMIN:"
+	}
+
+	"PlayerField"
+	{
+		"en"		"PLAYER:"
+	}
+	
+	"TEMPORARY"
+	{
+		"en"		"TEMPORARY"
+	}
+	
+	"MINUTE"
+	{
+		"en"		"minute"
+	}
+	
+	"MINUTES"
+	{
+		"en"		"minutes"
+	}
+	
+	"PERMANENT"
+	{
+		"en"		"PERMANENT"
+	}
+
+	"LengthField"
+	{
+		"en"		"LENGTH"
+	}
+	
+	"SourceBansReportTitle"
+	{
+		"en"		"New Report!"
+	}
+	
+	"SourceCommsTitle"
+	{
+		"en"		"New Player Comm-Banned!"
+	}
+	
+	"MUTE"
+	{
+		"en"		"MUTE"
+	}
+	
+	"GAG"
+	{
+		"en"		"GAG"
+	}
+	
+	"SILENCE"
+	{
+		"en"		"SILENCE"
+	}
+	
+	"TypeField"
+	{
+		"en"		"TYPE"
+	}
+	
+	"MustVerify"
+	{
+		"#format"	"{1:s}"
+		"en"		"You have to verify your {blue}Discord {default}account! Type {orange}{1}"
+	}
+}
