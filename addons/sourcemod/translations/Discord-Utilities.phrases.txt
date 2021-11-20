@@ -2,17 +2,17 @@
 {
 	"CurrentMapField"
 	{
-		"en"		"Current Map:"
+		"en"		"Mapa atual:"
 	}
 
 	"PlayersOnlineField"
 	{
-		"en"		"Players Online:"
+		"en"		"Jogadores Online:"
 	}
 
 	"DirectConnectField"
 	{
-		"en"		"Direct Connect:"
+		"en"		"Conectar:"
 	}
 	
 	"ChatRelayFormat"
@@ -24,69 +24,69 @@
 	"AdminChatRelayFormat"
 	{
 		"#format"	"{1:s},{2:s},{3:s}"		//1 = Username | 2 = Discriminator | 3 = Message
-		"en"		"Admin: {orange}{1}#{2}{default}: {3}"
+		"en"		"Staff: {orange}{1}#{2}{default}: {3}"
 	}
 	
 	"TryAgainLater"
 	{
-		"en"		"Please wait. Your member status hasn't been fetched yet."
+		"en"		"Aguarda por favor. O teu status de membro ainda não carregou."
 	}
 	
 	"DiscordRevoked"
 	{
-		"en"		"You are no longer in our discord server therefore your discord member status has been revoked!"
+		"en"		"Já não estás no nosso discord por isso o teu estatudo de verificado foi removido!"
 	}
 	
 	"DiscordMissingParameters"
 	{
 		"#format"	"{1:s}"
-		"en"		"<@{1}> You need to provide an ID for this command!"
+		"en"		"<@{1}> Tens que fornecer um ID para usar este comando!"
 	}
 
 	"DiscordInvalidID"
 	{
 		"#format"	"{1:s},{2:s}"
-		"en"		"<@{1}> This ID is not valid, please type {2} in-game and try again!"
+		"en"		"<@{1}> Este ID não é válido, por favor escreve {2} no jogo e tenta novamente!"
 	}
 
 	"DiscordInvalid"
 	{
 		"#format"	"{1:s}"
-		"en"		"<@{1}> There is no client with this ID, ensure you are connected to the game server and check your ID again!"
+		"en"		"<@{1}> Não existe nenhum cliente com este ID, verifica se estás conectado no servidor e tenta novamente!"
 	}
 	
 	"DiscordInfo"
 	{
 		"#format"	"{1:s},{2:s}"
-		"en"		"<@{1}> This channel is being used for account linking!\nUsage: {2} <verification code>"
+		"en"		"<@{1}> Esta sala é utilizada para verificar contas!\nUsa: {2} <código de verificação>"
 	}
 	
 	"DiscordVerified"
 	{
 		"#format"	"{1:s},{2:s}"
-		"en"		"You have verified your account. ({green}{1}#{2}{default})"
+		"en"		"Verificaste a tua conta. ({green}{1}#{2}{default})"
 	}
 	
 	"DiscordLinked"
 	{
 		"#format"	"{1:s}"
-		"en"		"<@{1}> You've linked your account! ✅"
+		"en"		"<@{1}> Verificaste a tua conta! ✅"
 	}
 	
 	"DiscordAlreadyLinked"
 	{
 		"#format"	"{1:s}"
-		"en"		"<@{1}> This discord account is already linked! ❌"
+		"en"		"<@{1}> Esta conta de discord já está vinculada! ❌"
 	}
 	
 	"ChatRelayPrivateToAdmins"
 	{
-		"en"		"Private To Admins: "
+		"en"		"Privado para staff: "
 	}
 	
 	"ChatRelayAllChat"
 	{
-		"en"		"All Chat: "
+		"en"		"Chat geral: "
 	}
 	
 	"AdminLogFormat"
@@ -104,163 +104,163 @@
 	"LinkYourID"
 	{
 		"#format"	"{1:s}"
-		"en" 		"Your ID: {grey}{1}"
+		"en" 		"O teu ID: {grey}{1}"
 	}
 	
 	"LinkConnect"
 	{
-		"en"		"Join our discord server:"
+		"en"		"Entra no nosso Discord:"
 	}
 
 	"LinkUsage"
 	{
 		"#format"	"{1:s},{2:s},{3:s}"
-		"en"		"Type {lime}{1} {2} {default}in {orange}#{3}"
+		"en"		"Escreve {lime}{1} {2} {default}na sala {orange}#{3}"
 	}
 	
 	"CopyPasteFromConsole"
 	{
-		"en"		"You can also {lime}copy-paste{default} from {orange}console{default} :)"
+		"en"		"Também podes {lime}copiar e colar{default} da {orange}consola{default}"
 	}
 
 	"CallAdminReportHandledTitle"
 	{
-		"en"		"CallAdmin Report is being handled!"
+		"en"		"Report está a ser resolvido!"
 	}
 	
 	"CallAdminReportHandlerName"
 	{
-		"en"		"Handler Name:"
+		"en"		"Staff encarregue:"
 	}
 	
 	"CallAdminReportIDField"
 	{
-		"en"		"Report ID:"
+		"en"		"ID do Report:"
 	}
 	
 	"ServerField"
 	{
 		"#format"	"{1:s}"
-		"en"		"Server: {1}"
+		"en"		"Servidor: {1}"
 	}
 	
 	"CallAdminReportTitle"
 	{
-		"en"		"New CallAdmin Report!"
+		"en"		"Novo report!"
 	}
 	
 	"CONSOLE"
 	{
-		"en"		"CONSOLE"
+		"en"		"CONSOLA"
 	}
 	
 	"SERVER"
 	{
-		"en"		"SERVER"
+		"en"		"SERVIDOR"
 	}
 	
 	"ReporterField"
 	{
-		"en"		"Reporter:"
+		"en"		"Jogador:"
 	}
 	
 	"TargetField"
 	{
-		"en"		"Target:"
+		"en"		"Infrator:"
 	}
 	
 	"ReasonField"
 	{
-		"en"		"Reason:"
+		"en"		"Razão:"
 	}
 	
 	"BugReportTitle"
 	{
-		"en"		"New Bug Report!"
+		"en"		"Novo bug!"
 	}
 	
 	"MapField"
 	{
-		"en"		"Map:"
+		"en"		"Mapa:"
 	}
 	
 	"NoReasonSpecified"
 	{
-		"en"		"No reason specified."
+		"en"		"Nenhuma razão específicada."
 	}
 	
 	"SourceBansTitle"
 	{
-		"en"		"New Player Server Banned!"
+		"en"		"Novo jogador banido do servidor!"
 	}
 	"AdminField"
 	{
-		"en"		"ADMIN:"
+		"en"		"STAFF:"
 	}
 
 	"PlayerField"
 	{
-		"en"		"PLAYER:"
+		"en"		"JOGADOR:"
 	}
 	
 	"TEMPORARY"
 	{
-		"en"		"TEMPORARY"
+		"en"		"TEMPORÁRIO"
 	}
 	
 	"MINUTE"
 	{
-		"en"		"minute"
+		"en"		"minuto"
 	}
 	
 	"MINUTES"
 	{
-		"en"		"minutes"
+		"en"		"minutos"
 	}
 	
 	"PERMANENT"
 	{
-		"en"		"PERMANENT"
+		"en"		"PERMANENTE"
 	}
 
 	"LengthField"
 	{
-		"en"		"LENGTH"
+		"en"		"DURAÇÃO"
 	}
 	
 	"SourceBansReportTitle"
 	{
-		"en"		"New Report!"
+		"en"		"Novo report!"
 	}
 	
 	"SourceCommsTitle"
 	{
-		"en"		"New Player Comm-Banned!"
+		"en"		"Novo jogador Mutado!"
 	}
 	
 	"MUTE"
 	{
-		"en"		"MUTE"
+		"en"		"MUTE(VOZ)"
 	}
 	
 	"GAG"
 	{
-		"en"		"GAG"
+		"en"		"MUTE(CHAT)"
 	}
 	
 	"SILENCE"
 	{
-		"en"		"SILENCE"
+		"en"		"MUTE(VOZ/CHAT)"
 	}
 	
 	"TypeField"
 	{
-		"en"		"TYPE"
+		"en"		"TIPO"
 	}
 	
 	"MustVerify"
 	{
 		"#format"	"{1:s}"
-		"en"		"You have to verify your {blue}Discord {default}account! Type {orange}{1}"
+		"en"		"Tens que verificar a tua conta {blue}Discord {default}! Escreve {orange}{1}"
 	}
 }
