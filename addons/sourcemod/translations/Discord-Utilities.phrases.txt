@@ -34,7 +34,7 @@
 	
 	"DiscordRevoked"
 	{
-		"en"		"Já não estás no nosso discord por isso o teu estatudo de verificado foi removido!"
+		"en"		"Já não estás no nosso discord por isso o teu estatuto de verificado foi removido!"
 	}
 	
 	"DiscordMissingParameters"
