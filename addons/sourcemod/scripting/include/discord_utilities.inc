@@ -5,6 +5,8 @@
 
 typedef FetchedUserIdHandler = function void(const char[] szSteamId, const char[] discordId, any data);
 
+typedef FetchedRoleIdHandler = function void(int client, bool found, any data);
+
 /**
  * Called after a client's data has been retrieved from database. 
  *
@@ -124,7 +126,7 @@ native void DU_DeleteRole(int client, char[] roleid);
  * @param maxsize		Max size of string.
  * @noreturn
  */
-native void DU_CheckRole(int client, char[] roleid);
+native void DU_CheckRole(int client, char[] roleid, FetchedRoleIdHandler handler, any data = 0);
 
 public SharedPlugin __pl_discord_utilities =
 {
