@@ -36,6 +36,8 @@ public int SQLQuery_Connect(Database db, const char[] error, any userid)
 			OnClientPreAdminCheck(client);
 		}
 	}
+
+	return 0;
 }
 
 public int SQLQuery_ConnectCallback(Database db, DBResultSet results, const char[] error, any userid)
@@ -44,6 +46,8 @@ public int SQLQuery_ConnectCallback(Database db, DBResultSet results, const char
 	{
 		LogError("[DU-ConnectCallback] Database failure: %s", error);
 	}
+
+	return 0;
 }
 	
 public void PruneDatabase()
@@ -76,6 +80,8 @@ public int SQLQuery_PruneDatabase(Database db, DBResultSet results, const char[]
 	{
 		LogError("[DU-PruneDatabase] Query failure: %s", error);
 	}
+
+	return 0;
 }
 
 public int SQLQuery_GetUserData(Database db, DBResultSet results, const char[] error, any userid)
@@ -86,13 +92,13 @@ public int SQLQuery_GetUserData(Database db, DBResultSet results, const char[] e
 	
 	if((client = GetClientOfUserId(userid)) == 0)
 	{
-		return;
+		return 0;
 	}
 	
 	if(db == null)
 	{
 		LogError("[DU-GetUserData] Query failure: %s", error);
-		return;
+		return 0;
 	}
 	if(results.RowCount == 0) 
 	{
@@ -109,7 +115,7 @@ public int SQLQuery_GetUserData(Database db, DBResultSet results, const char[] e
 		}
 		g_hDB.Query(SQLQuery_InsertNewPlayer, Query);
 		OnClientPreAdminCheck(client);
-		return;
+		return 0;
 	}
 	while(results.FetchRow())
 	{
@@ -133,6 +139,8 @@ public int SQLQuery_GetUserData(Database db, DBResultSet results, const char[] e
 	Call_StartForward(g_hOnClientLoaded);
 	Call_PushCell(client);
 	Call_Finish();
+
+	return 0;
 }
 
 public int SQLQuery_InsertNewPlayer(Database db, DBResultSet results, const char[] error, any userid)
@@ -141,6 +149,8 @@ public int SQLQuery_InsertNewPlayer(Database db, DBResultSet results, const char
 	{
 		LogError("[DU-InsertNewPlayer] Query failure: %s", error);
 	}
+
+	return 0;
 }
 
 public int SQLQuery_CheckUserData(Database db, DBResultSet results, const char[] error, DataPack pack)
@@ -148,7 +158,7 @@ public int SQLQuery_CheckUserData(Database db, DBResultSet results, const char[]
 	if(db == null)
 	{
 		LogError("[DU-CheckUserData] Query failure: %s", error);
-		return;
+		return 0;
 	}
 	char szUserIdDB[20];
 	while (results.FetchRow())
@@ -204,6 +214,8 @@ public int SQLQuery_CheckUserData(Database db, DBResultSet results, const char[]
 		Format(szReply, sizeof(szReply), "%T", "DiscordAlreadyLinked", LANG_SERVER, szUserId);
 		Bot.SendMessageToChannelID(g_sVerificationChannelID, szReply);
 	}
+
+	return 0;
 }
 
 public int SQLQuery_LinkedAccount(Database db, DBResultSet results, const char[] error, any userid)
@@ -212,6 +224,8 @@ public int SQLQuery_LinkedAccount(Database db, DBResultSet results, const char[]
 	{
 		LogError("[DU-LinkedAccount] Query failure: %s", error);
 	}
+
+	return 0;
 }
 
 public int SQLQuery_UpdatePlayer(Database db, DBResultSet results, const char[] error, any userid)
@@ -220,6 +234,8 @@ public int SQLQuery_UpdatePlayer(Database db, DBResultSet results, const char[] 
 	{
 		LogError("[DU-UpdatePlayer] Query failure: %s", error);
 	}
+
+	return 0;
 }
 
 public int SQLQuery_DeleteAccount(Database db, DBResultSet results, const char[] error, DataPack pack)
@@ -229,7 +245,7 @@ public int SQLQuery_DeleteAccount(Database db, DBResultSet results, const char[]
 		pack.Reset();
 		delete pack;
 		LogError("[DU-DeleteAccount] Query failure: %s", error);
-		return;
+		return 0;
 	}
 	pack.Reset();
 	int userid = pack.ReadCell();
@@ -243,7 +259,9 @@ public int SQLQuery_DeleteAccount(Database db, DBResultSet results, const char[]
 	}
 	if((client = GetClientOfUserId(userid)) == 0)
 	{
-		return;
+		return 0;
 	}
 	CPrintToChat(client, "%s Successfully deleted account from database.", g_sServerPrefix);
+
+	return 0;
 }

@@ -230,7 +230,7 @@ public Action OnClientPreAdminCheck(int client)
 {
 	if(IsFakeClient(client) || g_hDB == null)
 	{
-		return;
+		return Plugin_Continue;
 	}
 	
 	char szQuery[512], szSteamId[32];
@@ -241,13 +241,13 @@ public Action OnClientPreAdminCheck(int client)
 	
 	if(StrEqual(g_sAPIKey, ""))
 	{
-		return;
+		return Plugin_Continue;
 	}
 	
 	char szSteamID64[32];
 	if(!GetClientAuthId(client, AuthId_SteamID64, szSteamID64, sizeof(szSteamID64)))
 	{
-		return;
+		return Plugin_Continue;
 	}
 
 	static char sRequest[256];
@@ -257,13 +257,15 @@ public Action OnClientPreAdminCheck(int client)
 	{
 		delete hRequest;
 	}
+
+	return Plugin_Continue;
 }
 
 public int OnSettingsChanged(ConVar convar, const char[] oldVal, const char[] newVal)
 {
 	if(StrEqual(oldVal, newVal, true))
 	{
-        return;
+        return 0;
 	}
 	if(convar == g_cCallAdmin_Webhook)
 	{
@@ -473,6 +475,8 @@ public int OnSettingsChanged(ConVar convar, const char[] oldVal, const char[] ne
 			RefreshClients();
 		}
 	}
+
+	return 0;
 }
 
 public void GuildList(DiscordBot bawt, char[] id, char[] name, char[] icon, bool owner, int permissions, const bool listen)

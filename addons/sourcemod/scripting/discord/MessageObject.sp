@@ -3,6 +3,8 @@ public int Native_DiscordMessage_GetID(Handle plugin, int numParams) {
 	char buffer[64];
 	JsonObjectGetString(hJson, "id", buffer, sizeof(buffer));
 	SetNativeString(2, buffer, GetNativeCell(3));
+
+	return 0;
 }
 
 public int Native_DiscordMessage_IsPinned(Handle plugin, int numParams) {
@@ -26,6 +28,8 @@ public int Native_DiscordMessage_GetContent(Handle plugin, int numParams) {
 	static char buffer[2000];
 	JsonObjectGetString(hJson, "content", buffer, sizeof(buffer));
 	SetNativeString(2, buffer, GetNativeCell(3));
+
+	return 0;
 }
 
 public int Native_DiscordMessage_GetChannelID(Handle plugin, int numParams) {
@@ -33,4 +37,6 @@ public int Native_DiscordMessage_GetChannelID(Handle plugin, int numParams) {
 	char buffer[64];
 	JsonObjectGetString(hJson, "channel_id", buffer, sizeof(buffer));
 	SetNativeString(2, buffer, GetNativeCell(3));
+
+	return 0;
 }

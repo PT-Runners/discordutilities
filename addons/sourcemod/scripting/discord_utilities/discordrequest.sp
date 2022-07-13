@@ -74,7 +74,7 @@ public int HeadersReceived(Handle request, bool failure, any data, any datapack)
 	if(failure)
 	{
 		delete dp;
-		return;
+		return 0;
 	}
 	
 	char xRateLimit[16];
@@ -111,6 +111,8 @@ public int HeadersReceived(Handle request, bool failure, any data, any datapack)
 		SetTrieValue(hRateLeft, route, -1);
 		SetTrieValue(hRateLimit, route, -1);
 	}
+
+	return 0;
 }
 
 public Handle UrlToDP(char[] url)

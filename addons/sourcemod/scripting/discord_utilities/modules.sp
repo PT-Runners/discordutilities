@@ -7,7 +7,7 @@ public Action Timer_DisplayMapNotification(Handle timer, DataPack pack)
 	GetLastMap(PrevMap, sizeof(PrevMap));
 	if(strcmp(PrevMap, map) == 0)
 	{
-		return;
+		return Plugin_Stop;
 	}
 	DiscordWebHook hook = new DiscordWebHook( g_sMap_Webhook );
 	hook.SlackMode = true;
@@ -55,6 +55,8 @@ public Action Timer_DisplayMapNotification(Handle timer, DataPack pack)
 	hook.Send();
 	delete hook;
 	UpdateLastMap();
+
+	return Plugin_Stop;
 }
 
 public void CallAdmin_OnReportHandled(int client, int id)

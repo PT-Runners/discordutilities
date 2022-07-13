@@ -65,6 +65,7 @@ void GetMembers(Handle hData = INVALID_HANDLE)
 
 public int HTTPCompleted(Handle request, bool failure, bool requestSuccessful, EHTTPStatusCode statuscode, any data, any data2)
 {
+	return 0;
 }
 
 public void MembersDataReceive(Handle request, bool failure, int offset, int statuscode, any dp)
@@ -111,7 +112,7 @@ public int GetMembersData(const char[] data, any dp)
 
 		json_object_set_new(hData, "after", json_string(userid));
 		GetMembers(hData);
-		return;
+		return 0;
 	}
 		
 	OnGetMembersAll(hFinalMemberList);
@@ -119,6 +120,8 @@ public int GetMembersData(const char[] data, any dp)
 	delete hJson;
 	delete hData;
 	delete hFinalMemberList;
+
+	return 0;
 }
 
 public void OnGetMembersAll(Handle hMemberList)
@@ -764,7 +767,7 @@ public int OnTransferCompleted(Handle hRequest, bool bFailure, bool bRequestSucc
 	{
 		LogError("SteamAPI HTTP Response failed: %d", eStatusCode);
 		delete hRequest;
-		return;
+		return 0;
 	}
 
 	int iBodyLength;
@@ -776,6 +779,8 @@ public int OnTransferCompleted(Handle hRequest, bool bFailure, bool bRequestSucc
 	delete hRequest;
 	
 	APIWebResponse(sData, client);
+
+	return 0;
 }
 
 public void APIWebResponse(const char[] sData, int client)
@@ -941,6 +946,8 @@ public int GetRoleData(const char[] data, any dp)
 	delete hJson;
 	delete hData;
 	delete fwd;
+
+	return 0;
 }
 
 void ManagingRole(char[] userid, char[] roleid, EHTTPMethod method)
@@ -1117,7 +1124,7 @@ stock int GetClientFromUniqueCode(const char[] unique)
 	return -1;
 }
 
-stock char ChangePartsInString(char[] input, const char[] from, const char[] to)
+stock char[] ChangePartsInString(char[] input, const char[] from, const char[] to)
 {
 	char output[64];
 	ReplaceString(input, sizeof(output), from, to);
@@ -1191,21 +1198,25 @@ bool CheckAdminFlags(int client, int iFlag)
 public Action VerifyAccounts(Handle timer)
 {
 	AccountsCheck();
+	return Plugin_Stop;
 }
 
 public Action SendGetMembers(Handle timer, any data)
 {
 	GetMembers(view_as<Handle>(data));
+	return Plugin_Stop;
 }
 
 public Action SendManageRole(Handle timer, any data)
 {
 	ManageRole(view_as<Handle>(data));
+	return Plugin_Stop;
 }
 
 public Action SendCheckRole(Handle timer, any data)
 {
 	CheckRole(view_as<Handle>(data));
+	return Plugin_Stop;
 }
 
 public Action SendRequestAgain(Handle timer, DataPack dp)
@@ -1216,14 +1227,17 @@ public Action SendRequestAgain(Handle timer, DataPack dp)
 	ReadPackString(dp, route, sizeof(route));
 	delete dp;
 	DiscordSendRequest(request, route);
+	return Plugin_Stop;
 }
 
 public Action Timer_RefreshClients(Handle timer)
 {
 	RefreshClients();
+	return Plugin_Stop;
 }
 
 public Action Timer_GuildList(Handle timer)
 {
 	GetGuilds();
+	return Plugin_Stop;
 }
